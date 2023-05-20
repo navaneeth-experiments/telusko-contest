@@ -37,7 +37,29 @@ Now let's reimagine the same pascal's triangle with some mathematics as shown be
    2C0    2C1   2C2
 3C0    3C1    3C2   3C3
 </pre>
+
 ![image](https://github.com/navaneeth-experiments/telusko-contest/assets/128879708/3f39895e-b3e4-4481-9601-006f6d521a8d)
 
+This is what we are going to convert into code. We will get the number the rows to be printed as an input. Let's consider it as 4 as in our example.
+- So, now number of columns = 4
+- And if you observe the number of elements in each row is equal to row number, right? 1st row has 1 number, 2nd row has 2 numbers, 3rd row has 3 and so on...
+- So, we will take one for loop for rows starting from 0 and ending at 4, and other for loop for printing columns starting at 1 and ending at row number.
+ <pre>
+  for (let i = 0; i <= rows; i++) {
+    for (let j = 1; j <= i; j++) {
+      const number = calculate_nCr(i, j);
+      console.log(number)
+    }
+  }
+</pre>
+- Like that we will get the each and every number in the pascal triangle and we can format it according to the requirements. Here calculate_nCr is a helper function, which gives result as per maths formula shown below.
+<pre>
+nCr = n! / [(n-r)! * r!]
+</pre>
+This is one way of doing.
 
-      
+## Optimization
+The above approach looks cool but calculating factorials of big numbers may be difficult.
+So, we will change the way we are getting each number. Again by applying some mathematics as shown in the code.
+
+Happy coding 😁😁
