@@ -43,7 +43,7 @@ Again, As we know from the above method is a combination of 3 parameters, let's 
 
 In the similar manner i wrote the required methods as shown below:
 - `findBy` + `Warranty` + `LessThan` => `findByWarrantyLessThan`
-- `findBy` + `Name` + `Contains` + `IgnoreCase` + `Or` + `Type` + `Contains` + `IgnoreCase` + `Or` + `Place` + `Contains` + `IgnoreCase` => findByNameContainsIgnoreCaseOrTypeContainsIgnoreCaseOrPlaceContainsIgnoreCase
+- `findBy` + `Name` + `Contains` + `IgnoreCase` + `Or` + `Type` + `Contains` + `IgnoreCase` + `Or` + `Place` + `Contains` + `IgnoreCase` => `findByNameContainsIgnoreCaseOrTypeContainsIgnoreCaseOrPlaceContainsIgnoreCase`
 
 That's it for today.
 Happy coding 🚀🚀
